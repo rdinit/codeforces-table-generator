@@ -77,8 +77,8 @@ def generate_markdown(
         tried_unobligatory_tasks += 1
 
     statistics_text = [
-        "|name|param|",
-        "|-|-|",
+        "|name|",
+        "|-|",
         f"Obligatory tasks tried: {tried_obligatory_tasks}/{len(obligatory_tasks)} ({int(tried_obligatory_tasks/ len(obligatory_tasks) * 1000) / 10}%)",
         f"Obligatory tasks solved: {done_obligatory_tasks}/{len(obligatory_tasks)} ({int(done_obligatory_tasks/ len(obligatory_tasks) * 1000) / 10}%)",
         f"Unobligatory tasks tried: {tried_unobligatory_tasks}/{unobligatory_tasks_count} ({int(tried_unobligatory_tasks/ unobligatory_tasks_count * 1000) / 10}%)",

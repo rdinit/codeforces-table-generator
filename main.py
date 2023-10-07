@@ -73,7 +73,7 @@ def generate_markdown(
     for task in undrawed_tasks:
         table_text.append(f"|{task}|{VERDICTS[tasks_solved[task]]}|NO|")
         if tasks_solved[task] >= solve_criterion:
-            tried_unobligatory_tasks += 1
+            done_unobligatory_tasks += 1
         tried_unobligatory_tasks += 1
 
     statistics_text = [

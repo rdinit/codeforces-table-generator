@@ -1,13 +1,13 @@
 import requests
 
 
-VERDICTS = ["RUNTIME_ERROR", "WRONG_ANSWER", "TIME_LIMIT_EXCEEDED", "OK"]
+VERDICTS = ["RUNTIME_ERROR", "COMPILATION_ERROR", "WRONG_ANSWER", "TIME_LIMIT_EXCEEDED", "OK"]
 
 with open("codeforces.id") as f:
     CODEFORCES_ID = f.read().replace('\r', '').replace('\n', '')
 
 with open("codeforces_tasks") as f:
-    text = f.read().lower().split("\n")
+    text = f.read().lower().replace('\r', '').split("\n")
 
 TASKS = text[1:]
 UNOBLIGATORY_TASKS_COUNT = int(text[0])

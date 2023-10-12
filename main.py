@@ -24,7 +24,7 @@ def parse_from_cf(codeforces_id) -> list:
         else:
             raise ValueError("Wrong status:" + request.text)
     else:
-        raise ValueError(f"request code error. {request.status_code}")
+        raise ValueError(f"request code error. {request.status_code} " + request.text)
 
 
 def parse_json(attempts) -> dict:

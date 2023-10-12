@@ -4,7 +4,7 @@ import requests
 VERDICTS = ["RUNTIME_ERROR", "WRONG_ANSWER", "TIME_LIMIT_EXCEEDED", "OK"]
 
 with open("codeforces.id") as f:
-    CODEFORCES_ID = f.read()
+    CODEFORCES_ID = f.read().replace('\r', '').replace('\n', '')
 
 with open("codeforces_tasks") as f:
     text = f.read().lower().split("\n")

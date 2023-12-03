@@ -1,7 +1,7 @@
 import requests
 
 
-VERDICTS = ["RUNTIME_ERROR", "COMPILATION_ERROR", "WRONG_ANSWER", "TIME_LIMIT_EXCEEDED", "OK"]
+VERDICTS = ["RUNTIME_ERROR", "COMPILATION_ERROR", "WRONG_ANSWER", "MEMORY_LIMIT_EXCEEDED", "TIME_LIMIT_EXCEEDED", "OK"]
 
 with open("codeforces.id") as f:
     CODEFORCES_ID = f.read().replace('\r', '').replace('\n', '')

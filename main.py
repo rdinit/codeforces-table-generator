@@ -70,6 +70,7 @@ def generate_markdown(
         else:
             table_text.append(f"|{task}| missed |YES|")
     print(undrawed_tasks)
+    table_text +=  ["", "Task Id | Status | Obligate |", "|---|---|---|"]
     for task in undrawed_tasks:
         table_text.append(f"|{task}|{VERDICTS[tasks_solved[task]]}|NO|")
         if tasks_solved[task] >= solve_criterion:
